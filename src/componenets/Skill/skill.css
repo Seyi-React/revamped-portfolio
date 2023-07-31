@@ -1,0 +1,55 @@
+.skill {
+    margin-top: 4rem;
+    padding: 10px 10%;
+}
+.skill h1 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.skill p {
+    font-size: 25px;
+}
+.floating-image {
+    width: 60px; /* Set the width and height of your images */
+    height: 60px;
+    border-radius: 50%;
+    animation: floatAnimation 3s infinite alternate;
+}
+.floating-images-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2.5rem;
+   /* Set the height to your desired value */
+  }
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-15px); /* Adjust the value to control the floating distance */
+    }
+  }
+@media (max-width:823px) {
+    .floating-images-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+        place-items: center;
+    }
+}
+  @media (max-width:550px) {
+   .floating-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+   }
+ 
+   .skill h1 {
+    font-size: 40px;
+   }
+   .skill p {
+    font-size: 20px;
+   }
+  } 

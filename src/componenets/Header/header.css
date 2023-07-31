@@ -1,0 +1,23 @@
+.section {
+    padding: 1rem 10%;
+    margin-top: 5rem;
+}
+.section p {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.section h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+@media (max-width:550px) {
+    .section p {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+    }
+    .section h2 {
+        font-size: 3.2rem;
+        letter-spacing: 1px;
+    }
+}

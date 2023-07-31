@@ -1,0 +1,47 @@
+.about-me-div {
+    margin-top: 4rem;
+    padding: 10px 10%;
+}
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2.5rem;
+}
+.best {
+   height: 400px;
+   width: 400px;
+   object-fit: cover;
+}
+.h1 {
+    font-size: 55px;
+    cursor: pointer;
+    letter-spacing: 2px;
+   
+}
+.dev {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+@media (max-width:550px) {
+    .about {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .best {
+        width: 350px;
+        height: 350px;
+    }
+}
+@media (max-width:500px) {
+    .best {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 300px;
+        height: 300px;
+    }
+    .h1 {
+        font-size: 50px;
+    }
+}

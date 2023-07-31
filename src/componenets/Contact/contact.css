@@ -1,0 +1,126 @@
+.contact {
+    margin-top: 4rem;
+    padding: 10px 10%;
+}
+.contact h1 {
+    letter-spacing: 1px;
+}
+.info-d {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.info {
+    margin-top: 3rem;
+}
+.info-d-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.button-div {
+    margin-top: 1rem;
+}
+.button-div > a > button  {
+     width: 150px;
+     height: 38px;
+     background-color: #ff004f;
+     color: white;
+     outline: none;
+     border: none;
+     border-radius: 5px;
+     font-family: 'Patrick Hand', cursive ;
+     font-size: 14px;
+     letter-spacing: 1px;
+}
+.button-div > a > button:hover,form button:hover {
+    background-color: white;
+    color: black;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form label,form input,form textarea,form button {
+    display: block;
+}
+form input {
+    outline: none;
+    border: none;
+    width:250px;
+    height: 35px;
+    background-color: #262626;
+    color: white;
+    font-family: 'Patrick Hand', cursive ;
+     margin: 10px 0;
+
+}
+form textarea {
+    outline: none;
+    border: none;
+    background-color: #262626;
+    color: white;
+    font-family: 'Patrick Hand', cursive ;
+    margin: 10px 0;
+    width: 550px;
+    height: 250px;
+}
+ form button {
+    width: 150px;
+    height: 38px;
+    background-color: #ff004f;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Patrick Hand', cursive ;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+ }
+ .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+ }
+
+ @media (max-width:913px) {
+    .flex {
+        gap: 2rem;
+    }
+    form textarea {
+        width: 450px;
+    }
+ }
+ @media (max-width:823px) {
+
+    form textarea {
+        width: 350px;
+        height: 150px;
+    }
+ }
+ @media (max-width:601px ) {
+    .flex {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+ }
+ @media (max-width:500px) {
+    form textarea {
+        width: 300px;
+        height: 120px;
+    }
+ }
+ @media (max-width:322px) {
+    form textarea {
+        width: 270px;
+    }
+ }
